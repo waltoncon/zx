@@ -49,5 +49,8 @@
     "*.d.ts"
   ],
   "repository": "waltoncon/zx",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "Apache-2.0"
 }
