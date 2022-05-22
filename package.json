@@ -1,6 +1,6 @@
 {
   "name": "@waltoncon/zx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool for writing better scripts.",
   "main": "src/index.mjs",
   "types": "src/index.d.ts",
