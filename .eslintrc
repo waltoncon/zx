@@ -1,0 +1,13 @@
+{
+    "extends": "@waltoncon",
+    "rules": {
+        "eslint-comments/no-unlimited-disable": "off",
+        "no-console": "warn",
+        "valid-typeof": [
+            "error",
+            {
+                "requireStringLiterals": false
+            }
+        ]
+    }
+}
