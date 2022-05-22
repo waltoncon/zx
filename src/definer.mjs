@@ -22,6 +22,8 @@ function defineArgument(argConfig) {
             value = argv._.slice(arg);
         } else if (typeof array === 'number') {
             value = argv._.slice(arg, arg + array);
+        } else if (required) {
+            value = argv._[arg] ?? def;
         } else {
             value = argv._[arg] ?? def ?? '';
         }
