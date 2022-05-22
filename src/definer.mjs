@@ -59,7 +59,7 @@ function defineArgument(argConfig) {
 }
 
 function buildHelpOptions(config, entries) {
-    const { showSeperator = true } = config?.help;
+    const { showSeperator = true } = config?.help ?? {};
     const p = '    ';
 
     const flags = entries.filter(e => e[1].flag || e[1].shortFlag).map(([key, flag]) => {
