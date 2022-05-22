@@ -68,6 +68,27 @@ declare module 'zx' {
   type sleep = (ms: number) => Promise<void>
   type quiet = (p: ProcessPromise<ProcessOutput>) => ProcessPromise<ProcessOutput>
 
+  interface daArg {
+    arg: number;
+    name?: string;
+  }
+
+  interface daFlag {
+    flag: string;
+    shortFlag?: string;
+    type?: 'string' | 'boolean' | 'number';
+    description?: string;
+    helpHint?: string;
+  }
+
+  type DefineArgumentsArgs = Record<string, daFlag>;
+
+  interface DefineArgumentsConfig {
+    helpText?: string;
+  }
+
+  type defineArguments = (args: DefineArgumentsArgs, config: DefineArgumentsConfig) => Record<string, any>;
+
   export const $: $
   export const argv: ParsedArgs
   export const cd: cd
@@ -84,6 +105,7 @@ declare module 'zx' {
   export const sleep: sleep
   export const quiet: quiet
   export const which: typeof _which
+  export const defineArguments: defineArguments
 }
 
 declare module 'zx/globals' {
@@ -101,6 +123,7 @@ declare module 'zx/globals' {
     question,
     sleep,
     which as _which,
+    defineArguments,
   } from 'zx'
 
   global {
@@ -119,6 +142,7 @@ declare module 'zx/globals' {
     var question: question
     var sleep: sleep
     var which: typeof _which
+    var defineArguments: defineArguments
   }
 }
 

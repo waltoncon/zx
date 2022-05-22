@@ -26,6 +26,7 @@ import chalk from 'chalk'
 import YAML from 'yaml'
 import minimist from 'minimist'
 import psTreeModule from 'ps-tree'
+import { defineArguments } from './definer.mjs'
 
 export {chalk, fs, os, path, YAML, which}
 export const sleep = promisify(setTimeout)
@@ -54,6 +55,7 @@ export function registerGlobals() {
     sleep,
     YAML,
     which,
+    defineArguments,
   })
 }
 
