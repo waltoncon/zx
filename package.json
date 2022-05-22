@@ -1,6 +1,6 @@
 {
-  "name": "zx",
-  "version": "6.1.0",
+  "name": "@waltoncon/zx",
+  "version": "1.0.0",
   "description": "A tool for writing better scripts.",
   "main": "src/index.mjs",
   "types": "src/index.d.ts",
@@ -38,17 +38,16 @@
     "yaml": "^2.0.1"
   },
   "devDependencies": {
-    "c8": "^7.11.2"
-  },
-  "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com"
+    "@waltoncon/eslint-config": "^0.4.0",
+    "c8": "^7.11.2",
+    "eslint": "^8.16.0",
+    "typescript": "^4.6.4"
   },
   "files": [
     "src",
     "*.mjs",
     "*.d.ts"
   ],
-  "repository": "google/zx",
-  "author": "Anton Medvedev <anton@medv.io>",
+  "repository": "waltoncon/zx",
   "license": "Apache-2.0"
 }
