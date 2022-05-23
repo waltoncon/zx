@@ -27,8 +27,18 @@ import YAML from 'yaml'
 import minimist from 'minimist'
 import psTreeModule from 'ps-tree'
 import { defineArguments } from './definer.mjs'
+import XLSX from 'xlsx'
 
-export {chalk, fs, os, path, YAML, which, defineArguments}
+export {
+  chalk,
+  fs,
+  os,
+  path,
+  YAML,
+  which,
+  defineArguments,
+  XLSX
+}
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
 export const globby = Object.assign(function globby(...args) {
@@ -56,6 +66,7 @@ export function registerGlobals() {
     YAML,
     which,
     defineArguments,
+    XLSX,
   })
 }
 

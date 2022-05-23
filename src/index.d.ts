@@ -25,6 +25,7 @@ declare module 'zx' {
   import _fetch from 'node-fetch'
   import {ParsedArgs} from 'minimist'
   import * as _which from 'which'
+  import * as _xlsx from 'xlsx'
 
   export interface ZxTemplate {
     (pieces: TemplateStringsArray, ...args: any[]): ProcessPromise<ProcessOutput>
@@ -106,6 +107,7 @@ declare module 'zx' {
   export const quiet: quiet
   export const which: typeof _which
   export const defineArguments: defineArguments
+  export const XLSX: typeof _xlsx
 }
 
 declare module 'zx/globals' {
