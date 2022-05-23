@@ -45,6 +45,7 @@ export {
   CSV,
   CSVs,
   _,
+  utils,
 }
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
