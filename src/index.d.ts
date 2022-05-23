@@ -28,6 +28,7 @@ declare module 'zx' {
   import * as _xlsx from 'xlsx'
   import * as _csv from 'csv'
   import * as _csvs from 'csv/sync'
+  import _lodash from 'lodash'
 
   export interface ZxTemplate {
     (pieces: TemplateStringsArray, ...args: any[]): ProcessPromise<ProcessOutput>
@@ -112,6 +113,7 @@ declare module 'zx' {
   export const XLSX: typeof _xlsx
   export const CSV: typeof _csv
   export const CSVs: typeof _csvs
+  export const _: typeof _lodash
 }
 
 declare module 'zx/globals' {

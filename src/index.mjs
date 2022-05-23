@@ -30,6 +30,7 @@ import { defineArguments } from './definer.mjs'
 import XLSX from 'xlsx'
 import * as CSV from 'csv'
 import * as CSVs from 'csv/sync'
+import _ from 'lodash'
 
 export {
   chalk,
@@ -42,6 +43,7 @@ export {
   XLSX,
   CSV,
   CSVs,
+  _,
 }
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
@@ -73,6 +75,7 @@ export function registerGlobals() {
     XLSX,
     CSV,
     CSVs,
+    _,
   })
 }
 
