@@ -28,7 +28,7 @@ import minimist from 'minimist'
 import psTreeModule from 'ps-tree'
 import { defineArguments } from './definer.mjs'
 
-export {chalk, fs, os, path, YAML, which}
+export {chalk, fs, os, path, YAML, which, defineArguments}
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
 export const globby = Object.assign(function globby(...args) {
