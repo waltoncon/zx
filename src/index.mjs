@@ -31,6 +31,7 @@ import XLSX from 'xlsx'
 import * as CSV from 'csv'
 import * as CSVs from 'csv/sync'
 import _ from 'lodash'
+import * as utils from './utils.mjs';
 
 export {
   chalk,
@@ -76,6 +77,7 @@ export function registerGlobals() {
     CSV,
     CSVs,
     _,
+    utils,
   })
 }
 
