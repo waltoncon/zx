@@ -28,6 +28,8 @@ import minimist from 'minimist'
 import psTreeModule from 'ps-tree'
 import { defineArguments } from './definer.mjs'
 import XLSX from 'xlsx'
+import * as CSV from 'csv'
+import * as CSVs from 'csv/sync'
 
 export {
   chalk,
@@ -37,7 +39,9 @@ export {
   YAML,
   which,
   defineArguments,
-  XLSX
+  XLSX,
+  CSV,
+  CSVs,
 }
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
@@ -67,6 +71,8 @@ export function registerGlobals() {
     which,
     defineArguments,
     XLSX,
+    CSV,
+    CSVs,
   })
 }
 
