@@ -31,6 +31,7 @@ declare module 'zx' {
   import _lodash from 'lodash'
   import * as _utils from './utils.mjs'
   import _zip from 'adm-zip';
+  import * as _dateFns from 'date-fns';
 
   export interface ZxTemplate {
     (pieces: TemplateStringsArray, ...args: any[]): ProcessPromise<ProcessOutput>
@@ -118,6 +119,7 @@ declare module 'zx' {
   export const _: typeof _lodash
   export const utils: typeof _utils
   export const AdmZip: typeof _zip
+  export const dateFns: typeof _dateFns
 }
 
 declare module 'zx/globals' {

@@ -33,6 +33,7 @@ import * as CSVs from 'csv/sync'
 import _ from 'lodash'
 import * as utils from './utils.mjs';
 import AdmZip from 'adm-zip';
+import * as dateFns from 'date-fns';
 
 export {
   chalk,
@@ -48,6 +49,7 @@ export {
   _,
   utils,
   AdmZip,
+  dateFns,
 }
 export const sleep = promisify(setTimeout)
 export const argv = minimist(process.argv.slice(2))
@@ -82,6 +84,7 @@ export function registerGlobals() {
     _,
     utils,
     AdmZip,
+    dateFns,
   })
 }
 
