@@ -6,7 +6,8 @@
     "module": "nodenext",
     "strict": true,
     "outDir": "./build",
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true
   },
   "include": ["./src/**/*"],
   "exclude": ["./src/globals.ts"]

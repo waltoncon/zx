@@ -43,6 +43,8 @@ export {
   YAML,
 } from './goods.js'
 
+export * from './extra/goods.js';
+
 export { Duration } from './util.js'
 
 /**
