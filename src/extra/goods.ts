@@ -6,3 +6,4 @@ export * as utils from './util.js';
 export { default as AdmZip } from 'adm-zip';
 export * as dateFns from 'date-fns';
 export * from './definer.js';
+export { default as inquirer } from 'inquirer'
